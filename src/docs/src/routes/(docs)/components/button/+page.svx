@@ -36,6 +36,7 @@ data="{[
   { type:'modifier', class: 'btn-disabled', desc: 'Force button to show disabled state' },
   { type:'modifier', class: 'glass', desc: 'Button with a glass effect' },
   { type:'modifier', class: 'no-animation', desc: 'Disables click animation', prefix: false },
+  { type:'modifier', class: 'no-hover', desc: 'Disables hover effect', prefix: false },
   { type:'responsive', class: 'btn-lg', desc: 'Large button' },
   { type:'responsive', class: 'btn-md', desc: 'Medium button (default)' },
   { type:'responsive', class: 'btn-sm', desc: 'Small button' },
@@ -434,6 +435,17 @@ data="{[
 
 ```html
 <button class="$$btn no-animation">I don't have click animation</button>
+```
+
+{/snippet}
+</Component>
+
+<Component title="Button without hover effect">
+<button class="btn no-hover">No hover</button>
+{#snippet html()}
+
+```html
+<button class="$$btn no-hover">No hover</button>
 ```
 
 {/snippet}
